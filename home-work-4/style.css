@@ -1,0 +1,39 @@
+p {
+    color: blue;
+}
+
+.class-selector {
+    color: green;
+}
+
+#id-selector {
+    color: red;
+}
+
+p[data-custom] {
+    color: purple;
+}
+
+div section .nested-selector {
+    color: orange;
+}
+
+div > p {
+    background-color: yellow;
+}
+
+p.sequence-selector {
+    color: brown;
+}
+
+#combo.combo-class[data-info] {
+    color: rgb(52, 70, 105);
+}
+
+.multi-class.one {
+    color: pink;
+}
+
+div .nested.deep {
+    color: gray;
+}

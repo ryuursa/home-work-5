@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <nav>
+    <ul>
+            <li><a href="../index.html">Main</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="anchors.html">Anchors</a></li>
+            <li><a href="forms.html">Forms</a></li>
+    </ul>
+        </nav>
+       </header> 
+    <h1>Take a survey to make our site better</h1>
+
+   <form method="get" class="form-example">
+    <div class="form-example">
+      <label for="name">Enter your name: </label>
+      <input type="text" name="name" id="name" required >
+    </div>
+
+    <div class="form-example">
+      <label for="email">Enter your email: </label>
+      <input type="email" name="email" id="email" required >
+    </div>
+
+    <div class="form-example">
+      <label for="age">Select your age: </label>
+      <select name="age" id="age">
+        <option value="">Please choose an option</option>
+        <option value="18_21">18-21</option>
+        <option value="22_26">21-26</option>
+        <option value="27_32">27-32</option>
+      </select>
+    </div>
+
+    <fieldset>
+      <legend>How would you rate our website?</legend>
+      <input type="radio" id="rating1" name="rate" value="1" >
+      <label for="rating1">1</label>
+      <input type="radio" id="rating2" name="rate" value="2" >
+      <label for="rating2">2</label>
+      <input type="radio" id="rating3" name="rate" value="3" >
+      <label for="rating3">3</label>
+      <input type="radio" id="rating4" name="rate" value="4" >
+      <label for="rating4">4</label>
+      <input type="radio" id="rating5" name="rate" value="5" checked >
+      <label for="rating5">5</label>
+    </fieldset>    
+
+    <div class="form-example">
+      <label for="feedback">What do you like most about our site? </label>
+      <textarea id="feedback" name="feedback" rows="5" cols="33"></textarea>
+    </div>
+
+    <div class="form-example">
+      <label for="feedback2">What would you like to change about our website?</label>
+      <textarea id="feedback2" name="feedback2" rows="5" cols="33"></textarea>
+    </div>
+
+    <div class="form-example">
+      <input type="submit" value="Send!" >
+    </div>
+
+  </form>
+  
+</body>
+</html>

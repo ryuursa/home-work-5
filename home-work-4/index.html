@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Weight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Selector Weight Demonstration</h1>
+
+    <div>
+        <p>Застосовується до тегів p, вкладених у div, на першому рівні, вага 2</p>
+    </div>
+    
+    <p class="class-selector">Селектор класу, вага 10</p>
+    
+    <p id="id-selector">Селектор id, вага 100</p>
+    
+    <p data-custom="true">Селектор атрибута, вага 10</p>
+    
+    <div>
+        <section>
+            <h2>Вкладений селектор</h2>
+            <p class="nested-selector">Вкладений селектор, вага 20</p>
+        </section>
+    </div>
+    
+    <p class="sequence-selector">Послідовність селекторів (тег + клас), вага 12</p>
+    
+    <p id="combo" class="combo-class" data-info="true">Комбінація селекторів (id + клас + атрибут), вага 120</p>
+    
+    <p class="multi-class one">Кілька класів, вага 20</p>
+    
+    <div>
+        <p class="nested deep">Глибока вкладеність, вага 20</p>
+    </div>
+</body>
+</html>
